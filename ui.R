@@ -63,9 +63,19 @@ ui <- fluidPage(
                   plotOutput("plot3"),
                   h3("Regression Coefficient"),
                   verbatimTextOutput("prediction_output")
-                                 )
+                  )
+        ),
+        #third tab
+        tabPanel("Data and Terms",
+                   h3("GINI"),
+                   h4("Shows income inequality in a society. A higher number means more inequality"),
+                   h3("SUG"),
+                   h4("Shows the quantity of sugar consumed in grams per person per day"),
+                   h3("LEX"),
+                   h4("Shows life expectancy at birth")
         )
       )
     )
   )
 )
+
